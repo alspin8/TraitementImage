@@ -181,8 +181,8 @@ def main():
                 img, alpha = get_casque(casque, w)
                 if show_sunglasses:
                     s_img, s_alpha = get_sunglasses(sunglasses, alpha_sunglasses, int(w * 0.75))
-                    # frame = insert(frame, s_img, s_alpha, int(y - w * 0.25), left[0])
-                    frame = insert(frame, s_img, s_alpha, left[1] - 15, left[0] - 35)
+                    frame = insert(frame, s_img, s_alpha, int(y + w * 0.25), left[0] - 15)
+                    # frame = insert(frame, s_img, s_alpha, left[1] - 15, left[0] - 35)
                 if show_casque:
                     frame = insert(frame, img, alpha, int(y - w * 0.25), int(x - h * 0.25))
         except Exception as e:
